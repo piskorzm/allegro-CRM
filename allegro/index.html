@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+    <meta charset="utf-8">
+    <title>Migracja kont Allegro</title>
+    <meta name="description" content="Migracja kont">
+    <meta name="author" content="Marcin Piskorz">
+
+    <meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
+
+    <link rel="stylesheet" href="stylesheets/main.css">
+
+    <script src="scripts/FlatAccount.js"></script>
+    <script src="scripts/FlatAccounts.js"></script>
+    <script src="scripts/Address.js"></script>
+    <script src="scripts/Addresses.js"></script>
+    <script src="scripts/Company.js"></script>
+    <script src="scripts/Companies.js"></script>
+    <script src="scripts/User.js"></script>
+    <script src="scripts/Users.js"></script>
+    <script src="scripts/functions.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+    <script>
+        var flatAccounts = new FlatAccounts();
+        var users = new Users();
+        var addresses = new Addresses();
+        var companies = new Companies();
+
+        $(document).ready(function () {
+            loadFlatAccounts();
+            getFlatView();
+        });
+    </script>
+</head>
+<body>
+<div id="container">
+    <div id="nav">
+
+    </div>
+    <div id="content">
+
+    </div>
+</body>
+</html>

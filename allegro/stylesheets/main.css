@@ -1,0 +1,46 @@
+* {
+    font-family: "Open Sans", sans-serif;
+    color: #222222;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 5px;
+}
+
+table, th, td {
+    border: 1px solid #bbbbbb;
+}
+
+th, td {
+    font-size: 12px;
+    padding: 10px;
+    text-align: left;
+}
+
+#nav, #content {
+    flex-wrap: wrap;
+    display: inline-flex;
+}
+
+button {
+    color: #888888;
+    background-color: #ffffff;
+    outline: none;
+    padding: 14px 8px 16px 8px;
+    font-size: 15px;
+    border: none;
+    border-bottom: 3px solid #bbbbbb;
+}
+
+button:hover {
+    color: #ff5a00;
+    border-color: #ff5a00;
+}
+
+.button.disabled, .button.disabled:hover {
+    color: #dddddd;
+    border-color: #d8d8d8;
+    background-color: #eeeeee;
+    cursor: default;
+}
